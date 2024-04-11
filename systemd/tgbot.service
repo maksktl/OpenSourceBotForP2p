@@ -1,0 +1,13 @@
+[Unit]
+Description=White Crypto bot
+After=network.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+WorkingDirectory=/opt/p2p_telegram_bot
+ExecStart=/bin/bash -c 'source venv/bin/activate && pip install -r requirements.txt && python bot.py'
+
+[Install]
+WantedBy=multi-user.target
