@@ -5,3 +5,5 @@ class MyClass:
         self.value = 42
 def foo():
     return 'bar'
+if __name__ == '__main__':
+    print('This is a test script')
