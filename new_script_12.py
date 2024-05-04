@@ -5,3 +5,6 @@ for i in range(10):
 for i in range(10):
     print(i)
 print('Hello, World!')
+class MyClass:
+    def __init__(self):
+        self.value = 42
